@@ -1,0 +1,41 @@
+{
+  "name": "expenses-tracker-full-app",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon backend/index.js",
+    "client": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "node backend/index.js",
+    "render-build": "cd frontend && npm install && npm run build",
+    "install-all": "npm install && cd frontend && npm install"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^2.9.0",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "datauri": "^4.1.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.5",
+    "multer": "^2.0.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^3.1.10"
+  },
+  "keywords": [
+    "expenses",
+    "tracker",
+    "mern"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Full-stack expenses tracker application"
+}
