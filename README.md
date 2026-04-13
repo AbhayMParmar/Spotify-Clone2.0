@@ -1,4 +1,4 @@
-#  🎵 Spotify Clone - Music Streaming Web Application
+#  🎵 SoundWave - Music Streaming Web Application
 
   ✨ A full-stack Spotify clone built with modern web technologies. Experience music streaming with a beautiful UI,
      user authentication, playlist management, and real-time music playback.
