@@ -32,11 +32,10 @@
 
 #  ⚙️ Render.com Configuration
 
-  Build Command: npm run build
+  RUn this project : npm run build
 
-  Start Command: npm start
 
-# 🚀 Live Project on Render
+# 🚀 Live Project on vercel
   
-  https://advance-spotify-qf7v.onrender.com/
+ https://spotify-clone2-0-six.vercel.app/
 
