@@ -67,6 +67,12 @@ const Login = () => {
                     <span className="footer-text hover:text-white/60">Don't have an account?</span>
                     <Link to="/register" className="footer-link hover:link-hover">Sign up</Link>
                 </div>
+
+                <div className="flex justify-center mt-6">
+                    <Link to="/" className="text-gray-400 hover:text-white transition-colors duration-200 text-sm flex items-center gap-2">
+                        <span>&larr;</span> Back to Home
+                    </Link>
+                </div>
             </div>
         </div>
     )
