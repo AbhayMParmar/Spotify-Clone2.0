@@ -30,6 +30,7 @@ function App() {
                         <Route path="/login" element={isAuth ? <Navigate to="/" /> : <Login />} />
                         <Route path="/register" element={isAuth ? <Navigate to="/" /> : <Register />} />
                         <Route path="/search" element={isAuth ? <SearchPage /> : <Navigate to="/" />} />
+                        <Route path="*" element={<Navigate to="/" />} />
                     </Routes>
                 </BrowserRouter>
             )}
