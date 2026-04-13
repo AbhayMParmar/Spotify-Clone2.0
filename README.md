@@ -30,9 +30,6 @@
   
   🔄 RESTful API with Express.js
 
-#  ⚙️ Render.com Configuration
-
-  RUn this project : npm run build
 
 
 # 🚀 Live Project on vercel
