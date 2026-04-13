@@ -77,13 +77,16 @@ export const UserProvider = ({ children }) => {
 
     async function logoutUser() {
         try {
-            await axios.get("/api/user/logout", { withCredentials: true });
+            const { data } = await axios.get("/api/user/logout", { withCredentials: true });
+            toast.success(data.message || "Logged out successfully");
             setUser([]);
             setIsAuth(false);
             closeUserDropdown();
-            window.location.href = "/";
         } catch (error) {
-            toast.error(error.response.data.message);
+            toast.error(error.response?.data?.message || "Session cleared locally");
+            setUser([]);
+            setIsAuth(false);
+            closeUserDropdown();
         }
     }
 

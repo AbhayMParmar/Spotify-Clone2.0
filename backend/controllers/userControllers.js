@@ -66,7 +66,12 @@ export const myProfile = TryCatch(async (req, res) => {
 
 
 export const logoutUser = TryCatch(async (req, res) => {
-    res.cookie("token", "", { maxAge: 0 });
+    res.cookie("token", "", { 
+        maxAge: 0,
+        httpOnly: true, 
+        sameSite: "strict",
+        secure: process.env.NODE_ENV !== "development"
+    });
 
     res.json({
         message: "Logged Out Successfully",
