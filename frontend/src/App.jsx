@@ -1,5 +1,6 @@
 import React from "react";
 import Login from "./pages/Login";
+import LandingPage from "./pages/LandingPage";
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Home from "./pages/Home";
 import Register from "./pages/Register";
@@ -19,7 +20,7 @@ function App() {
             ) : (
                 <BrowserRouter>
                     <Routes>
-                        <Route path="/" element={isAuth ? <Home /> : <Login />} />
+                        <Route path="/" element={isAuth ? <Home /> : <LandingPage />} />
                         <Route path="/playlist" element={isAuth ? <PlayList user={user} /> : <Navigate to="/" />} />
                         <Route
                             path="/album/:id"
